@@ -22,9 +22,9 @@ function App() {
 					</button>
 				</div>
 				<div>
-					{displayTask === 0 && <QuestionThree />}
-					{displayTask === 1 && <AddTwoNum />}
-					{displayTask === 2 && <Navbar />}
+					{displayTask === 0 && <AddTwoNum />}
+					{displayTask === 1 && <Navbar />}
+					{displayTask === 2 && <QuestionThree />}
 				</div>
 			</div>
 		</div>
