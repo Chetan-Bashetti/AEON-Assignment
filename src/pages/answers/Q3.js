@@ -3,9 +3,12 @@ import React from 'react';
 const QuestionThree = () => {
 	React.useEffect(() => {
 		// SUCCESS CASE
-		console.log(twoSum([2, 7, 11, 15], 9));
-		console.log(twoSum([-1, 0], -1));
-		console.log(twoSum([2, 3, 4], 6));
+		console.log(
+			'FOR INPUT = [2, 7, 11, 15] and TARGET = 9 ',
+			twoSum([2, 7, 11, 15], 9)
+		);
+		console.log('FOR INPUT = [-1, 0] and TARGET = -1 ', twoSum([-1, 0], -1));
+		console.log('FOR INPUT = [2, 3, 4] and TARGET = 6 ', twoSum([2, 3, 4], 6));
 
 		// ERROR CASE
 		console.log(twoSum([2, 3, 4], 4));
