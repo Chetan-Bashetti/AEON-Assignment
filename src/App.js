@@ -1,25 +1,34 @@
-import logo from './logo.svg';
+import React from 'react';
+import QuestionThree from './pages/answers/Q3';
+import AddTwoNum from './pages/answers/addTwoNum';
+import Navbar from './pages/navbar/navbar';
+
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [displayTask, setDisplayTask] = React.useState(0);
+	return (
+		<div className='App'>
+			<div>
+				<div>
+					<button onClick={() => setDisplayTask(0)} className='task-btn'>
+						Task 1
+					</button>
+					<button onClick={() => setDisplayTask(1)} className='task-btn'>
+						Task 2
+					</button>
+					<button onClick={() => setDisplayTask(2)} className='task-btn'>
+						Task 3
+					</button>
+				</div>
+				<div>
+					{displayTask === 0 && <QuestionThree />}
+					{displayTask === 1 && <AddTwoNum />}
+					{displayTask === 2 && <Navbar />}
+				</div>
+			</div>
+		</div>
+	);
 }
 
 export default App;
