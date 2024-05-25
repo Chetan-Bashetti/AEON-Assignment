@@ -1,7 +1,7 @@
 import React from 'react';
 import QuestionThree from './pages/answers/Q3';
-import AddTwoNum from './pages/answers/addTwoNum';
-import Navbar from './pages/navbar/navbar';
+import AddTwoNum from './pages/answers/addTwoNum/addTwoNum';
+import Navbar from './pages/answers/navbar/navbar';
 
 import './App.css';
 
